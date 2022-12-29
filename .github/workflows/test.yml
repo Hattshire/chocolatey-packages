@@ -1,4 +1,4 @@
-name: Update packages
+name: Test package updates
 
 on:
   schedule:
