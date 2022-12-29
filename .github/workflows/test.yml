@@ -25,12 +25,12 @@ jobs:
       - name: Cache Choco lib
         uses: actions/cache@v3.2.2
         with:
-         key: ${{ hashfiles('C:\ProgramData\chocolatey\lib') }}
+         key: ${{ runner.os }}-choco-${{ hashfiles('C:\ProgramData\chocolatey\lib') }}
          path: 'C:\ProgramData\chocolatey\lib'
       - name: Cache AU Instalation
         uses: actions/cache@v3.2.2
         with:
-          key: ${{ hashfiles('C:\Program Files\WindowsPowerShell\Modules\AU') }}
+          key: ${{ runner.os }}-au-${{ hashfiles('C:\Program Files\WindowsPowerShell\Modules\AU') }}
           path: 'C:\Program Files\WindowsPowerShell\Modules\AU'
 
       - name: Chocolatey
