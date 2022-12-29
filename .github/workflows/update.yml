@@ -3,6 +3,7 @@ name: Update packages
 on:
   schedule:
     - cron: '30 19 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: read
