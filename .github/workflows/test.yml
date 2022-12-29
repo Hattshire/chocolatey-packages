@@ -5,9 +5,6 @@ on:
     - cron: '30 19 * * *'
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 jobs:
   build:
     permissions:
@@ -15,6 +12,12 @@ jobs:
       actions: read
     name: Update packages
     runs-on: windows-latest
+    env:
+      api_key: ${{ secrets.CHOCO_API }}
+      gist_id: ${{ secrets.GIST_ID }}
+      gist_id_test: ${{ secrets.GIST_TEST_ID }}
+      github_user_repo: ${{ github.repository }}
+      github_api_key: ${{ secrets.PAT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -24,7 +27,7 @@ jobs:
         with:
           args: install au
 
-      - name: Run update_all.ps1
+      - name: Run test_all.ps1
         uses: Amadevus/pwsh-script@v2
         id: script
         with: 
