@@ -5,8 +5,8 @@ $ErrorActionPreference = 'Stop'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'msi'
-  url64bit       = 'https://github.com/lapce/lapce/releases/download/v0.2.5/Lapce-windows.msi'
-  checksum64     = '21e164d8f9bf829e1fe1a18da26b24334232eb295905a98c50ad95de3dd780db'
+  url64bit       = 'https://github.com/lapce/lapce/releases/download/v0.2.7/Lapce-windows.msi'
+  checksum64     = 'b9738f4dea88394f62c6a97b9ba0ccaef8e39ecfa175a3d57e2b1ba82bdc46d0'
   checksumType64 = 'sha256'
 
   softwareName   = 'lapce*'
