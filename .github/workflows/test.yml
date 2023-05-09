@@ -1,0 +1,45 @@
+name: Test package updates
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      actions: read
+    name: Update packages
+    runs-on: windows-latest
+    env:
+      api_key: ${{ secrets.CHOCO_API }}
+      gist_id: ${{ secrets.GIST_ID }}
+      gist_id_test: ${{ secrets.GIST_TEST_ID }}
+      github_user_repo: ${{ github.repository }}
+      github_api_key: ${{ secrets.PAT }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Cache Choco lib
+        uses: actions/cache@v3.2.2
+        with:
+         key: ${{ runner.os }}-choco
+         path: 'C:\ProgramData\chocolatey\lib'
+      - name: Cache AU Instalation
+        uses: actions/cache@v3
+        with:
+          key: ${{ runner.os }}-au
+          path: 'C:\Program Files\WindowsPowerShell\Modules\AU'
+
+      - name: Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: install au
+
+      - name: Run test_all.ps1
+        uses: Amadevus/pwsh-script@v2
+        id: script
+        with: 
+          script: |
+            $ErrorActionPreference = 'Continue'
+            ./test_all.ps1
