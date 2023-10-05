@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>squirreldisk</id>
-    <version>0.3.0</version>
+    <version>0.3.4</version>
     <packageSourceUrl>https://github.com/Hattshire/chocolatey-packages/tree/master/squirreldisk</packageSourceUrl>
     <owners>Hattshire</owners>
     <!-- ============================== -->
@@ -30,7 +30,7 @@
 The easiest open source app you will ever use to detect huge files. Built with Rust + React (Tauri).
 Squirreldisk is an open source alternative to softwares like: WinDirStat, WizTree, TreeSize and DaisyDisk.
 ]]></description>
-    <releaseNotes>https://github.com/adileo/squirreldisk/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/adileo/squirreldisk/releases/tag/v0.3.4</releaseNotes>
     <!-- =============================== -->
     
     <dependencies>
