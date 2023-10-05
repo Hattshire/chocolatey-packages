@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>squirreldisk</id>
+    <version>0.3.0</version>
+    <packageSourceUrl>https://github.com/Hattshire/chocolatey-packages/tree/master/squirreldisk</packageSourceUrl>
+    <owners>Hattshire</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>SquirrelDisk</title>
+    <authors>Adileo Barone</authors>
+
+    <projectUrl>https://squirreldisk.com/</projectUrl>
+    <projectSourceUrl>https://github.com/adileo/squirreldisk</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/adileo/squirreldisk/issues</bugTrackerUrl>
+
+    <iconUrl>http://rawcdn.githack.com/adileo/squirreldisk/main/src-tauri/icons/256x256.png</iconUrl>
+
+    <licenseUrl>https://github.com/adileo/squirreldisk/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <copyright>Adileo Barone</copyright>
+    <summary>Disk Space Analysis Tool</summary>
+    <tags>squirreldisk disk usage admin rust</tags>
+
+    <description><![CDATA[
+The easiest open source app you will ever use to detect huge files. Built with Rust + React (Tauri).
+Squirreldisk is an open source alternative to softwares like: WinDirStat, WizTree, TreeSize and DaisyDisk.
+]]></description>
+    <releaseNotes>https://github.com/adileo/squirreldisk/releases/tag/v0.3.0</releaseNotes>
+    <!-- =============================== -->
+    
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.21" />
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
