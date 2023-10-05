@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>lapce</id>
-    <version>0.2.7</version>
+    <version>0.2.8</version>
     <packageSourceUrl>https://github.com/Hattshire/chocolatey-packages/tree/master/lapce</packageSourceUrl>
     <owners>Hattshire</owners>
     <!-- ============================== -->
@@ -29,7 +29,7 @@
 
     <description><![CDATA[Lapce is an open source code editor written in Rust. By utilising native GUI and GPU rendering, and with the performance Rust provides, Lapce is one of the fastest code editors out there.
 ]]></description>
-    <releaseNotes>https://github.com/lapce/lapce/releases/tag/v0.2.7</releaseNotes>
+    <releaseNotes>https://github.com/lapce/lapce/releases/tag/v0.2.8</releaseNotes>
     <!-- =============================== -->
     
     <dependencies>
