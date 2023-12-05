@@ -33,9 +33,7 @@ Squirreldisk is an open source alternative to softwares like: WinDirStat, WizTre
     <releaseNotes>https://github.com/adileo/squirreldisk/releases/tag/v0.3.4</releaseNotes>
     <!-- =============================== -->
     
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.21" />
-    </dependencies>
+    <dependencies></dependencies>
 
   </metadata>
   <files>
