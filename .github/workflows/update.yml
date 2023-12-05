@@ -21,7 +21,7 @@ jobs:
       gist_id: ${{ secrets.GIST_ID }}
       gist_id_test: ${{ secrets.GIST_TEST_ID }}
       github_user_repo: ${{ github.repository }}
-      github_api_key: ${{ secrets.PAT }}
+      github_api_key: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
