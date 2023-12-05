@@ -32,9 +32,7 @@
     <releaseNotes>https://github.com/lapce/lapce/releases/tag/v0.2.8</releaseNotes>
     <!-- =============================== -->
     
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.21" />
-    </dependencies>
+    <dependencies></dependencies>
 
   </metadata>
   <files>
