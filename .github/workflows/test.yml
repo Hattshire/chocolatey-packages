@@ -12,8 +12,8 @@ jobs:
     runs-on: windows-latest
     env:
       api_key: ${{ secrets.CHOCO_API }}
-      gist_id: ${{ secrets.GIST_ID }}
-      gist_id_test: ${{ secrets.GIST_TEST_ID }}
+      gist_id: ${{ vars.GIST_ID }}
+      gist_id_test: ${{ vars.GIST_TEST_ID }}
       github_user_repo: ${{ github.repository }}
       github_api_key: ${{ secrets.PAT }}
     steps:
