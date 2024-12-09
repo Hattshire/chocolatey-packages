@@ -22,9 +22,10 @@ jobs:
       gist_id_test: ${{ vars.GIST_TEST_ID }}
       github_user_repo: ${{ github.repository }}
       github_api_key: ${{ secrets.GITHUB_TOKEN }}
+      ErrorActionPreference: 'Continue'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Chocolatey
         uses: crazy-max/ghaction-chocolatey@v2
@@ -32,9 +33,4 @@ jobs:
           args: install chocolatey-au
 
       - name: Run update_all.ps1
-        uses: Amadevus/pwsh-script@v2
-        id: script
-        with: 
-          script: |
-            $ErrorActionPreference = 'Continue'
-            ./update_all.ps1
+        run: ./update_all.ps1
