@@ -1,4 +1,4 @@
-import-module au
+import-module Chocolatey-AU
 
 $releases = 'https://github.com/lapce/lapce/releases/latest'
 $assets = 'https://github.com/lapce/lapce/releases/expanded_assets/v'

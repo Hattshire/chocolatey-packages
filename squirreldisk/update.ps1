@@ -1,4 +1,4 @@
-import-module au
+import-module Chocolatey-AU
 
 $releases = 'https://github.com/adileo/squirreldisk/releases/latest'
 $assets = 'https://github.com/adileo/squirreldisk/releases/expanded_assets/v'
