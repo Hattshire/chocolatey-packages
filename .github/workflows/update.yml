@@ -29,7 +29,7 @@ jobs:
       - name: Chocolatey
         uses: crazy-max/ghaction-chocolatey@v2
         with:
-          args: install au
+          args: install chocolatey-au
 
       - name: Run update_all.ps1
         uses: Amadevus/pwsh-script@v2
